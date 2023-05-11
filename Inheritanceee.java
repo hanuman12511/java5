@@ -1,4 +1,6 @@
- abstract class Info1{
+
+
+abstract class Info1{
     void show(){
         System.out.println("Show all info");
     }
