@@ -1,13 +1,13 @@
 import java.util.Scanner;
 
-class checkout{
+class login{
     private int id1;
     private String pass1;
     private int id2;
     private String pass2;
     private boolean flag = false;
 
-    checkout(int id1, String pass1, int id2, String pass2){
+    login(int id1, String pass1, int id2, String pass2){
         this.id1 = id1;
         this.pass1 = pass1;
         this.id2 = id2;
@@ -35,13 +35,13 @@ class checkout{
     }
 }
 
-class fruit{
+class cart{
     public String[] fruits;
     private int[] prices;
     private int index;
     private int kg;
 
-    fruit(String[] fruits, int[] prices){
+    cart(String[] fruits, int[] prices){
         this.fruits = fruits;
         this.prices = prices;
     }
@@ -82,7 +82,7 @@ public class gouravdev {
         int id2 = 102;
         String pass2 = "mnp";
 
-        checkout ch = new checkout(101, "abc", 102, "mnp");
+        login ch = new login(101, "abc", 102, "mnp");
         boolean flag = ch.input();
 
         Scanner sc = new Scanner(System.in);
@@ -91,7 +91,7 @@ public class gouravdev {
             String[] fruits = {"apple", "banana", "mango", "orange", "grapes"};
             int[] prices = {50, 30, 80, 40, 60};
 
-            fruit f = new fruit(fruits, prices);
+            cart f = new cart(fruits, prices);
             f.show();
             f.buy();
             f.pay();
