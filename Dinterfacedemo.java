@@ -1,5 +1,8 @@
+interface data{
+    void display();
+}
 
-interface Info{
+interface Info extends data{
     int id=9;
     void show();
     default void show1(){
@@ -17,7 +20,15 @@ class Emp implements Info{
     public void show(){
         System.out.println(id);
     }
+    public void display(){
+        
+    }
 }
+
+class Result extends Emp implements data{
+    
+}
+
 public class Dinterfacedemo {
     
     public static void main( String...r) {
