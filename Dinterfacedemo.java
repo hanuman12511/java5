@@ -11,6 +11,7 @@ interface Info extends data{
 
     static void show2(){
         System.out.println("static method");
+        
     }
 
 }
