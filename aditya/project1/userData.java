@@ -71,7 +71,7 @@ public class userData {
         return productId;
     }
 
-    void setproductName(String productName[],int n) {
+    void setproductName(String productName[], int n) {
         System.out.println(productName.length);
         this.productName = productName;
         for (int j = 0; j < n; j++) {
@@ -88,20 +88,21 @@ public class userData {
     }
 
     int[] getrate() {
-        
+
         return rate;
     }
-    void setquantity(int quantity){
-        this.quantity=quantity;
+
+    void setquantity(int quantity) {
+        this.quantity = quantity;
     }
-    int getquantity(){
+
+    int getquantity() {
         return quantity;
     }
-    
 
     void setpayment(int payment) {
         this.payment = payment;
-        
+
         // payment=(rate)*(quantity);
     }
 
