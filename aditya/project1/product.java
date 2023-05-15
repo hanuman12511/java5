@@ -7,7 +7,12 @@ public class product {
         System.out.println("enter product name:");
         userData ud = new userData();
         Scanner s = new Scanner(System.in);
-        ud.setproductName(s.next());
+        String name[] =new String[10];
+        for(int i=0;i<3;i++){
+            System.out.print("Enter name");
+            name[i] = s.next();
+        }
+        ud.setproductName(name,3);
         System.out.println("enter quantity");
         ud.setquantity(s.nextInt());
         

@@ -71,10 +71,11 @@ public class userData {
         return productId;
     }
 
-    void setproductName(String productName[]) {
+    void setproductName(String productName[],int n) {
+        System.out.println(productName.length);
         this.productName = productName;
-        for (int j = 0; j < productName.length; j++) {
-            System.out.println(productName);
+        for (int j = 0; j < n; j++) {
+            System.out.println(productName[j]);
         }
     }
 
