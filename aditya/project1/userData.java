@@ -8,7 +8,7 @@ public class userData {
     private int productId[] = { 1, 2 };
     private String productName[] = { "item1", "item2" };
     private int rate[] = { 100, 200 };
-    private int quantity;
+    // private int quantity;
     private int addtocartId[] = new int[10];
     private int addtocartQty[] = new int[10];
     private int payment;
@@ -65,21 +65,25 @@ public class userData {
 
     void setproductId(int productId[]) {
         this.productId = productId;
+        for (int i = 0; i < productId.length; i++) {
+            System.out.println(productId);
+        }
     }
 
     int[] getproductId() {
         return productId;
     }
 
-    void setproductName(String productName[], int n) {
-        System.out.println(productName.length);
+    void setproductName(String productName[]) {
+        // System.out.println(productName.length);
         this.productName = productName;
-        for (int j = 0; j < n; j++) {
-            System.out.println(productName[j]);
+        for (String str : productName) {
+            System.out.println(str);
         }
     }
 
     String[] getproductName() {
+
         return productName;
     }
 
@@ -92,13 +96,13 @@ public class userData {
         return rate;
     }
 
-    void setquantity(int quantity) {
-        this.quantity = quantity;
-    }
+    // void setquantity(int quantity) {
+    // this.quantity = quantity;
+    // }
 
-    int getquantity() {
-        return quantity;
-    }
+    // int getquantity() {
+    // return quantity;
+    // }
 
     void setpayment(int payment) {
         this.payment = payment;
@@ -116,5 +120,8 @@ public class userData {
 
     int getpayoption() {
         return payoption;
+    }
+
+    public void getproductName(String[] name2) {
     }
 }
