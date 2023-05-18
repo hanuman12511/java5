@@ -1,4 +1,5 @@
 package aditya.project1;
+
 import project1.UserData;
 import java.util.Scanner;
 
@@ -8,7 +9,7 @@ public class product {
         userData ud = new userData();
         Scanner s = new Scanner(System.in);
         String name[] = new String[2];
-        
+
         ud.setproductName(name);
 
     }
