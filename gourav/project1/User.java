@@ -1,9 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package project1;
+package gourav.project1;
 
 import java.util.Scanner;
 
@@ -23,6 +18,9 @@ public class User {
                 if(sc.next().equals("yes")){
                     break;
                 }
+                else{
+                    Login lg = new Login();
+                }
             }
             else{
                 System.out.println("not login");
@@ -36,7 +34,5 @@ public class User {
             }
 
        }
-        //Login lg = new Login();
     }
- 
 }
